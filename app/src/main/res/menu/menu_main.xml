@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Option item for Settings (Not shown in the action bar, it appears in the overflow menu) -->
+    <item
+        android:id="@+id/option_settings"
+        android:title="@string/settings"
+        android:orderInCategory="10"
+        app:showAsAction="never" />
+
+    <!-- Option item for Favorites (Visible if space allows) -->
+    <item
+        android:id="@+id/option_favorites"
+        android:icon="@drawable/button_style"
+        android:title="@string/action_favorites"
+        android:orderInCategory="30"
+        app:showAsAction="ifRoom" />
+
+    <!-- Action item for Settings (Shows in the action bar if there's room) -->
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/settings"
+        android:orderInCategory="40"
+        app:showAsAction="ifRoom" />
+
+    <!-- Action item for Favorites (Shows in the action bar if there's room) -->
+    <item
+        android:id="@+id/action_favorites"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/action_favorites"
+        android:orderInCategory="50"
+        app:showAsAction="ifRoom" />
+</menu>
