@@ -1,8 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/popup_option_1"
-        android:title="@string/option_1" />
+        android:title="@string/what_s_your_favorite_color" />
     <item
         android:id="@+id/popup_option_2"
-        android:title="@string/option_2" />
+        android:title="@string/what_s_your_dream_destination" />
+    <item
+        android:id="@+id/option_forward"
+        android:title="@string/would_you_rather_have_super_strength_or_fly" />
 </menu>

@@ -1,40 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:gravity="center">
+    android:padding="16dp">
 
-    <!-- TextView for displaying selected date -->
+    <!-- Hardcoded Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_a_date_and_time"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- TextView to display selected date -->
     <TextView
         android:id="@+id/tv_selected_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/selected_date_none"
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp" />
+        android:text="@string/date_selected"
+        android:textSize="18sp" />
 
-    <!-- Button for opening Date Picker -->
+    <!-- Button to trigger DatePicker -->
     <Button
-        android:id="@+id/btn_date_picker"
+        android:id="@+id/pickDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pick_a_date"
-        android:layout_marginBottom="16dp" />
+        android:text="@string/pick_date" />
 
-    <!-- TextView for displaying selected time -->
+    <!-- TextView to display selected time -->
     <TextView
         android:id="@+id/tv_selected_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/selected_time_none"
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp" />
+        android:text="@string/string_selected_time"
+        android:textSize="18sp" />
 
-    <!-- Button for opening Time Picker -->
+    <!-- Button to trigger TimePicker -->
     <Button
-        android:id="@+id/btn_time_picker"
+        android:id="@+id/pickTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pick_a_time" />
+        android:text="@string/picktime" />
+
 </LinearLayout>

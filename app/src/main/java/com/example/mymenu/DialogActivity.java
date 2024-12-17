@@ -16,11 +16,29 @@ public class DialogActivity extends AppCompatActivity {
     }
 
     private void showDialog() {
-        new AlertDialog.Builder(this)
-                .setTitle("Sample Dialog")
-                .setMessage("This is an example of an AlertDialog.")
-                .setPositiveButton("OK", (dialog, which) -> dialog.dismiss())
-                .setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss())
-                .show();
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+
+        // Set the title, message, and buttons
+        alertDialog.setTitle("Sample Dialog")
+                .setMessage("This is an example of an AlertDialog with multiple buttons.");
+
+        // Set actions for the buttons
+        alertDialog.setPositiveButton("OK", (dialog, which) -> {
+            // Action when OK button is clicked
+            dialog.dismiss();
+        });
+
+        alertDialog.setNeutralButton("Maybe Later", (dialog, which) -> {
+            // Action when Neutral button is clicked
+            dialog.dismiss();
+        });
+
+        alertDialog.setNegativeButton("Cancel", (dialog, which) -> {
+            // Action when Cancel button is clicked
+            dialog.dismiss();
+        });
+
+        // Show the AlertDialog
+        alertDialog.show();
     }
 }
